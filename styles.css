@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap');
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -11,24 +13,118 @@
         etc.
     5. Media Queries
 ////////////////////////*/
-
 /* ------------------------------- 1. Global Styles -------------------------------- */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --primary-purple: #5722CD;
+    --primary-light: #4845E4;
+    --secondary-pink: #ED4385;
+    --black-text: #0C0C0C;
+    --light-purple: #F2F0FF;
+    --light-grey: #F3F6F9;
+    --grey: #7A7A7A
+    --white: #ffffff
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
+button, input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+p {
+    margin: 20px 0
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
+/*.dev {*/
+/*    border: 2px dashed yellow;*/
+/*}*/
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.inner-container {
+    flex-basis: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+
+}
 
 /* --------------- 3.2 Other --------------------------- */
+
+/*Hier kun je buttons/links stijlen en foto's schaalbaar maken*/
+
+button, input {
+    border-radius: 25px;
+    padding: 12px 24px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: var(--white);
+    text-transform: uppercase;
+    background-color: var(--secondary-pink)
+}
+
+.squiggle-line-header {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+
+
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+
+.header-section {
+    background: rgb(75, 73, 232);
+    background: linear-gradient(90deg, rgba(75, 73, 232, 1) 30%, rgba(87, 34, 205, 1) 100%);
+    color: white;
+}
+
+.header-section_navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    padding-bottom: 40px;
+}
+
+.header-section_menu {
+    list-style: none;
+    display: flex;
+    flex-basis: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 /* --------------- 4.2 Introduction ------------------- */
 
