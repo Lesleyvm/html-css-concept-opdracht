@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap');
-
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -52,12 +51,20 @@ h1, h2, h3, h4, h5 {
     font-weight: 400;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    margin: 18px 0
+}
+
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
-/*.dev {*/
-/*    border: 2px dashed yellow;*/
-/*}*/
+.dev {
+    border: 2px dashed red;
+}
 
 .outer-container {
     display: flex;
@@ -67,20 +74,27 @@ h1, h2, h3, h4, h5 {
 }
 
 .inner-container {
-    flex-basis: 1200px;
+    flex-basis: 1600px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 20px;
+}
 
+.inner-container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 750px;
 }
 
 /* --------------- 3.2 Other --------------------------- */
 
 /*Hier kun je buttons/links stijlen en foto's schaalbaar maken*/
 
-button, input {
+button {
     border-radius: 25px;
     padding: 12px 24px;
     border: none;
@@ -90,14 +104,10 @@ button, input {
     background-color: var(--secondary-pink)
 }
 
-.squiggle-line-header {
-    text-align: center;
+.squiggle-stripe-header {
     margin-top: 80px;
-    margin-bottom: 30px;
+    margin-bottom: -5px;
 }
-
-
-
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
@@ -114,7 +124,7 @@ button, input {
     display: flex;
     justify-content: flex-end;
     padding: 20px 0;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 }
 
 .header-section_menu {
@@ -127,5 +137,81 @@ button, input {
 
 
 /* --------------- 4.2 Introduction ------------------- */
+
+.inner-container-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin-top: 40px;
+}
+
+h2 {
+    color: var(--primary-purple);
+    padding: 10px 0;
+    font-size: 23px;
+}
+
+.contact-text-main {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 60px 0;
+}
+
+.contact-link-main {
+    text-decoration: none;
+}
+
+/* --------------- 4.3 Projects ------------------- */
+
+.work-image {
+    width: 100%;
+    box-shadow: 5px 5px 25px dimgrey;
+}
+
+.image-wrapper {
+    flex-basis: 600px;
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    background-color: var(--light-grey);
+}
+
+.variety-wrapper {
+    flex-direction: row-reverse;
+}
+
+.section-text {
+    flex-basis: 400px;
+
+    margin-left: 60px;
+    text-align: right;
+}
+
+.variety-text {
+    flex-basis: 400px;
+
+    margin-right: 60px;
+    text-align: left;
+}
+
+
+.section-text-2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.view-project-link {
+    color: var(--primary-purple);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
