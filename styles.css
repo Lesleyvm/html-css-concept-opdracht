@@ -56,7 +56,11 @@ h1 {
 }
 
 h3 {
-    margin: 18px 0
+    margin: 18px 0;
+}
+
+h4 {
+    color: var(--primary-purple);
 }
 
 /* ------------------------------- 3. Layout --------------------------------------- */
@@ -107,6 +111,15 @@ button {
 .squiggle-stripe-header {
     margin-top: 80px;
     margin-bottom: -5px;
+}
+
+.work-image {
+    width: 100%;
+    box-shadow: 5px 5px 25px dimgrey;
+}
+
+.image-wrapper {
+    flex-basis: 600px;
 }
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
@@ -165,21 +178,11 @@ h2 {
 
 /* --------------- 4.3 Projects ------------------- */
 
-.work-image {
-    width: 100%;
-    box-shadow: 5px 5px 25px dimgrey;
-}
-
-.image-wrapper {
-    flex-basis: 600px;
-}
-
 .section-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 20px;
-    background-color: var(--light-grey);
+    margin: 25px;
 }
 
 .variety-wrapper {
@@ -200,7 +203,6 @@ h2 {
     text-align: left;
 }
 
-
 .section-text-2 {
     font-size: 14px;
     font-weight: 400;
@@ -213,5 +215,37 @@ h2 {
     font-weight: 700;
 }
 
+.project-section {
+    background-color: var(--light-grey);
+}
+
+/* --------------- 4.4 USP's ------------------- */
+
+.usp-article img {
+    width: 75px;
+    margin: 15px 0;
+}
+
+.usp-article p {
+    font-size: 15px;
+}
+
+.usp-article {
+    text-align: left;
+    flex-basis: 400px;
+    border: 1px solid var(--primary-purple);
+    box-shadow: 5px 5px 25px darkgrey;
+    padding: 35px;
+}
+
+.inner-container__usp-grid {
+    flex-basis: 1300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    margin: 0 20px;
+    padding: 100px 0;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
