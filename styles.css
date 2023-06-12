@@ -55,6 +55,12 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    color: var(--primary-purple);
+    padding: 10px 0;
+    font-size: 23px;
+}
+
 h3 {
     margin: 18px 0;
 }
@@ -86,13 +92,6 @@ h4 {
     margin: 0 20px;
 }
 
-.inner-container-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 750px;
-}
 
 /* --------------- 3.2 Other --------------------------- */
 
@@ -132,6 +131,14 @@ button {
     color: white;
 }
 
+.inner-container__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 750px;
+}
+
 .header-section_navbar {
     width: 100%;
     display: flex;
@@ -151,19 +158,13 @@ button {
 
 /* --------------- 4.2 Introduction ------------------- */
 
-.inner-container-intro {
+.inner-container__intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 600px;
     margin-top: 40px;
-}
-
-h2 {
-    color: var(--primary-purple);
-    padding: 10px 0;
-    font-size: 23px;
 }
 
 .contact-text-main {
@@ -246,6 +247,47 @@ h2 {
     row-gap: 40px;
     margin: 0 20px;
     padding: 100px 0;
+}
+
+/* --------------- 4.5 Contact Section ------------------- */
+
+.contact-section {
+    background: rgb(75, 73, 232);
+    background: linear-gradient(90deg, rgba(75, 73, 232, 1) 30%, rgba(87, 34, 205, 1) 100%);
+    padding: 40px;
+}
+
+.contact-section h2 {
+    color: white;
+    font-size: 25px;
+    margin: 20px 0 0;
+}
+
+.contact-section p {
+    color: white;
+}
+
+.contact-section label {
+    color: white;
+}
+
+.submit-button {
+    color: white;
+    margin: 15px;
+}
+
+
+
+
+/* --------------- 4.6 Footer ------------------- */
+
+.footer-section {
+    background: black;
+}
+
+.footer-section p {
+    color: white;
+    font-size: 12px;
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
