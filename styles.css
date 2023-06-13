@@ -28,6 +28,7 @@
     --light-grey: #F3F6F9;
     --grey: #7A7A7A
     --white: #ffffff
+    /*(deze werkte niet altijd dus soms heb ik de normale white gebruikt)*/
 }
 
 body {
@@ -39,7 +40,7 @@ body {
 /* ------------------------------- 2. Typography ----------------------------------- */
 button, input {
     font-family: 'Roboto', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 p {
@@ -95,16 +96,22 @@ h4 {
 
 /* --------------- 3.2 Other --------------------------- */
 
-/*Hier kun je buttons/links stijlen en foto's schaalbaar maken*/
-
 button {
     border-radius: 25px;
     padding: 12px 24px;
     border: none;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    color: var(--white);
+    color: white;
     text-transform: uppercase;
     background-color: var(--secondary-pink)
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
 }
 
 .squiggle-stripe-header {
@@ -183,6 +190,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-basis: 1400px;
     margin: 25px;
 }
 
@@ -191,7 +199,7 @@ button {
 }
 
 .section-text {
-    flex-basis: 400px;
+    flex-basis: 300px;
 
     margin-left: 60px;
     text-align: right;
@@ -259,24 +267,32 @@ button {
 
 .contact-section h2 {
     color: white;
-    font-size: 25px;
+    font-size: 35px;
     margin: 20px 0 0;
 }
 
 .contact-section p {
     color: white;
+    font-size: 16px;
 }
 
 .contact-section label {
     color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    margin: 8px 0;
 }
 
 .submit-button {
-    color: white;
-    margin: 15px;
+    margin: 20px 0;
+    padding: 12px 35px;
 }
 
-
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* --------------- 4.6 Footer ------------------- */
@@ -291,3 +307,5 @@ button {
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+/*Helaas niet aan toe gekomen!*/
